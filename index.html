@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/vendor/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet" type="text/css" />
 </head>
 <body>
 
@@ -16,25 +17,25 @@
 
             <fieldset id="info">
 
-                <label for="name">First Name</label>
+                <label for="name">First Name:</label>
 
-                <input type="text" name="firstname" id="firstname" />
+                <input type="text" name="firstname" class="sameWidth" />
 
-                <label for="name">Last Name</label>
+                <label for="name">Last Name:</label>
 
-                <input type="text" name="lastname" id="lastname" />
+                <input type="text" name="lastname" class="sameWidth" />
 
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
 
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" class="sameWidth" />
+
+                <label for="comments">Message:</label>
+
+                <textarea name="comments" class="sameWidth"></textarea>
+
+                <input type="submit" name="submit" class="button" value="Submit Form" />
 
             </fieldset>
-
-            <label for="comments">Message</label>
-
-            <textarea name="comments" id="message"></textarea>
-
-            <input type="submit" name="submit" id="submit" value="Submit Form" />
 
         </form>
 

@@ -6,3 +6,42 @@ body {
     width: 50%;
     margin: 0 25%;
 }
+
+form {
+    padding-top: 20px;
+}
+
+fieldset {
+    border: 3px solid blue;
+    background-color: white;
+    border-radius: 3px;
+}
+
+label {
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+}
+
+input,
+textarea {
+    margin-bottom: 2%;
+    border: 2px solid blue;
+    border-radius: 3px;
+}
+
+.sameWidth {
+    width: 100%;
+}
+
+.button {
+    margin-top: 2%;
+    padding: 5px;
+    background-color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.5em;
+}
+
+.button:hover {
+    background-color: blue;
+    color: white;
+}
