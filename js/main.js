@@ -1,4 +1,4 @@
-var textInput = document.getElementsByClassName( 'name' );
+var textInput = document.getElementsByClassName( 'info' );
 
 document.querySelector( 'form.simpleForm' ).addEventListener( 'submit', function( event ) {
 

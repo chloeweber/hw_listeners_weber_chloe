@@ -27,10 +27,8 @@ textarea {
     margin-bottom: 2%;
     border: 2px solid blue;
     border-radius: 3px;
-}
-
-.info {
     width: 100%;
+    padding: 5px 0;
 }
 
 .button {
@@ -39,6 +37,7 @@ textarea {
     background-color: white;
     font-family: 'Fredoka One', cursive;
     font-size: 1.5em;
+    width: 20%;
 }
 
 .button:hover {
