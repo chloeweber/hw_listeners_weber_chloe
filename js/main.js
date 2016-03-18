@@ -1,4 +1,6 @@
-/* Event Listener 1: This event listener listens for the click on h2 with the id: headlineTwo. Once heard, this listener appends the section with the class: mainContent with an article that holds a paragraph with information on Corgi temperements.*/
+/* Event Listener 1: This event listener listens for the click on h2 with the id:
+headlineTwo. Once heard, this listener appends the section with the class: mainContent
+with an article that holds a paragraph with information on Corgi temperements.*/
 
 var heading = document.getElementById( 'headlineTwo' );
 
@@ -8,11 +10,18 @@ heading.addEventListener( 'click', function() {
     document.getElementsByClassName( 'mainContent' )[ 0 ].appendChild( myElement );
 } ) ;
 
-var image = document.getElementById( 'cuteCorgi' );
+/* Event Listener 2: This event listener listens for the click on the image with
+the id: cuteCorgi. Once heard, this listener uses a conditional statement to switch
+the image from the one already present to a new one. Another click changes it back,
+and vice versa.*/
 
-image.addEventListener( 'onmouseover', function() {
-    var myImage = document.createElement( 'img' );
-    img.setAttribute( 'src', 'https://farm4.staticflickr.com/3307/3617258898_42a13e2b8c_z.jpg' );
-    document.getElementsByClassName( 'corgiImages' )[ 0 ].appendChild( myImage );
+document.getElementById( 'cuteCorgi' ).addEventListener( 'click', changeImage );
 
-} ) ;
+function changeImage() {
+    var image = document.getElementById( 'cuteCorgi' );
+        if ( image.src.match( 'corgibutt' ) ) {
+            image.src = 'img/cutecorgi.jpg';
+        } else {
+        image.src = 'img/corgibutt.jpg';
+        }
+}
