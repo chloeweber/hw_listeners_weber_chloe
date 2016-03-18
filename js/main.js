@@ -7,3 +7,12 @@ heading.addEventListener( 'click', function() {
     myElement.innerHTML = '<p>Corgis are very active and energetic. They have a strong desire to please and should receive both physical and mental exercise regularly. They should be socialized early on because they tend to be shy and cautious with strangers and other dogs. They have a tendency to be very vocal, and for this reason make good alarm dogs.</p>';
     document.getElementsByClassName( 'mainContent' )[ 0 ].appendChild( myElement );
 } ) ;
+
+var image = document.getElementById( 'cuteCorgi' );
+
+image.addEventListener( 'onmouseover', function() {
+    var myImage = document.createElement( 'img' );
+    img.setAttribute( 'src', 'https://farm4.staticflickr.com/3307/3617258898_42a13e2b8c_z.jpg' );
+    document.getElementsByClassName( 'corgiImages' )[ 0 ].appendChild( myImage );
+
+} ) ;
