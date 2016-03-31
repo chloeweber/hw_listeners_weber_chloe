@@ -1,18 +1,9 @@
 var heading = document.getElementById( 'headlineOne' );
+var counter = 1;
 
 heading.addEventListener( 'click', function() {
     var myElement = document.createElement( 'article' );
-    myElement.innerHTML = '<p>This is click number</p>';
+    myElement.innerHTML = '<p>This is click number ' + counter + '</p>';
     document.getElementsByClassName( 'container' )[ 0 ].appendChild( myElement );
+    counter = counter + 1;
 } ) ;
-
-var add = ( function() {
-    var counter = 0;
-    return function() {return counter += 1;};
-} )();
-
-document.getElementById( 'headlineOne' ).addEventListener( 'click', countingFunction );
-
-function countingFunction() {
-    document.getElementById( 'headlineOne' ).innerHTML = add();
-}
